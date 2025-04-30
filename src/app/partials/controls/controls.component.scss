@@ -1,0 +1,43 @@
+@use 'sass:color';
+
+.container {
+    justify-self: center;
+    width: 300px;
+    max-width: 100%;
+    margin-bottom: 2rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+
+    label {
+        display: flex;
+        flex-direction: column;
+    }
+    div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+}
+
+@mixin buttonState($bg-color, $hover-darken: 5%, $active-darken: 10%) {
+    border-color: $bg-color;
+    background-color: $bg-color;
+    &:hover {
+        background-color: color.adjust($bg-color, $lightness: -$hover-darken);
+        border-color: color.adjust($bg-color, $lightness: -$hover-darken);
+    }
+    
+    &:active {
+        background-color: color.adjust($bg-color, $lightness: -$active-darken);
+        border-color: color.adjust($bg-color, $lightness: -$active-darken);
+        font-size: 0.95rem;
+    }
+}
+button {
+    height: 1.6rem;
+    width: 6rem;
+    cursor: pointer;
+    @include buttonState(#00c8fa);
+}

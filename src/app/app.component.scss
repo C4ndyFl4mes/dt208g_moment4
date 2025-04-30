@@ -1,0 +1,25 @@
+header {
+    height: 5rem;
+    margin-bottom: 1rem;
+    background-color: #71e1fd;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main {
+    width: 600px;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-bottom: 1rem;
+    background-color: #71e1fd;
+
+    border-radius: 20px;
+}
+footer {
+    margin-top: 5rem;
+    padding: 1rem;
+    background-color: #71e1fd;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}

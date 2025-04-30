@@ -3,7 +3,16 @@
         <span>Sök på kurskod eller kursnamn:</span>
         <input type="text" (input)="onSearch($event)" placeholder="Sök..." />
     </label>
-    <button (click)="onCodeSort($event)" class="random">Original</button>
-    <button (click)="onNameSort($event)" class="random">Original</button>
-    <button (click)="onProgressionSort($event)" class="random">Original</button>
+    <div>
+        <span>Sortera kurskod:</span>
+        <button (click)="onCodeSort($event)" class="random">Original</button>
+    </div>
+    <div>
+        <span>Sortera kursnamn:</span>
+        <button (click)="onNameSort($event)" class="random">Original</button>
+    </div>
+    <div>
+        <span>Sortera progression:</span>
+        <button (click)="onProgressionSort($event)" class="random">Original</button>
+    </div>
 </div>

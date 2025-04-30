@@ -9,4 +9,12 @@ import { Course } from '../../models/course';
 })
 export class ListComponent {
   @Input() courses: Array<Course> = [];
+
+  /**
+   * Förflyttar användaren till en ny sida på en ny tab.
+   * @param syllabus - länken.
+   */
+  public openLink(syllabus: string): void {
+    window.open(syllabus, "_blank");
+  }
 }
