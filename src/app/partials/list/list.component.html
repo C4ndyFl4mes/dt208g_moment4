@@ -8,7 +8,7 @@
     </thead>
     <tbody>
         @for(course of courses; track course.code) {
-        <tr (click)="openLink(course.syllabus)">
+        <tr (click)="openLink(course.syllabus)" title="Öppna {{course.coursename}} i ny flik?">
             <td>{{course.code}}</td>
             <td>{{course.coursename}}</td>
             <td>{{course.progression}}</td>
