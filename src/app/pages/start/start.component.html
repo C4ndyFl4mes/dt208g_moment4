@@ -1,2 +1,3 @@
 <p>start works!</p>
-<app-list [courses]="courses"></app-list>
+<app-controls (onSearchQuery)="search($event)" (onSort)="sort($event)"></app-controls>
+<app-list [courses]="coursesOnDisplay"></app-list>
